@@ -149,8 +149,7 @@
         },
 
         _shouldDisableRanking: function() {
-            return this.getSetting('type').toLowerCase() === 'task' && (!this.getSetting('showRows') || this.getSetting('showRows')
-                && this.getSetting('rowsField').toLowerCase() !== 'workproduct');
+            return this.getSetting('type').toLowerCase() === 'task' && (!this.getSetting('showRows') || this.getSetting('showRows') && this.getSetting('rowsField').toLowerCase() !== 'workproduct');
         },
 
         _addBoard: function() {
